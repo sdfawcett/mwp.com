@@ -4,3 +4,21 @@
 		@include font-family(heading);
 	}
 }
+
+.site-header {
+	padding-top: 1rem;
+}
+
+.brand a {
+  	display: flex;
+  	align-items: center;
+	font-family: "Heebo", sans-serif;
+	text-decoration: none;
+	color: #DDE2F4;
+	font-size: 1.25rem;
+	line-height: 1;
+}
+
+.brand a span {
+	padding-left: 1rem;
+}
