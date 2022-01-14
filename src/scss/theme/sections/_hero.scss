@@ -2,9 +2,30 @@
     text-align: left;
 }
 
+.hero.clients .split-wrap .split-item {
+    align-items: flex-end;
+}
+
+.hero.clients ul {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width: 1100px) {
     .hero .split-wrap {
         margin-bottom: 0;
+    }
+
+    .hero.clients .split-wrap .split-item {
+        align-items: center;
+    }
+
+    .hero.clients ul {
+        justify-content: center;
+    }
+
+    .hero.clients .list-reset li {
+        margin-right: 1rem;
     }
     
     .hero .split-wrap .split-item {
