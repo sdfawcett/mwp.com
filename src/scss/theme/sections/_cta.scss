@@ -40,6 +40,44 @@
 	justify-content: space-around;
 }
 
+.or-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1.25em;
+  margin: 0 1em;
+}
+.or-divider.italic {
+  font-style: italic;
+}
+.or-divider::before {
+  content: '';
+  height: .115em;
+  background: #99A1BA;
+  border: 1px solid #161822;
+  flex: 1;
+  margin: 0 .25em 0 0;
+}
+.or-divider::after {
+  content: '';
+  height: .115em;
+  background: #99A1BA;
+  border: 1px solid #161822;
+  flex: 1;
+  margin: 0 0 0 .25em;
+}
+.or-divider.italic::before,
+.or-divider.italic::after {
+  transform: skew(-18deg)
+}
+
+#message-body::placeholder, #email::placeholder, #name::placeholder {
+	color: #DDE2F4;
+}
+
 @media (max-width: 995px) {
 	#contact .split-wrap .split-item {
 		justify-content: space-evenly;
