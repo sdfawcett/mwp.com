@@ -1,0 +1,25 @@
+.hero .split-item-content {
+    text-align: left;
+}
+
+@media (max-width: 1100px) {
+    .hero .split-wrap {
+        margin-bottom: 0;
+    }
+    
+    .hero .split-wrap .split-item {
+        flex-direction: column;
+    }
+
+    .hero .split-wrap .split-item .split-item-content {
+        margin-right: 0;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero .split-wrap .split-item .split-item-content {
+        width: 100%;
+    }
+}

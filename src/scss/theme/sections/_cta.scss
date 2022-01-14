@@ -35,3 +35,19 @@
 .cta ul li:nth-of-type(4) {
 	border-right: none;
 }
+
+#contact .split-wrap .split-item {
+	justify-content: space-around;
+}
+
+@media (max-width: 995px) {
+	#contact .split-wrap .split-item {
+		justify-content: space-evenly;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#contact .split-wrap .split-item .split-item-content {
+		margin-right: 0;
+	}
+}
