@@ -2,4 +2,11 @@
 	display: inline-flex;
 	border-radius: 50%;
 	background-color: get-color(dark, 2);
+	padding: 1rem;
+}
+
+@media (max-width: 745px) {
+	.features-tiles .tiles-item-inner {
+		align-items: center;
+	}
 }

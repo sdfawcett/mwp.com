@@ -22,3 +22,55 @@
 .brand a span {
 	padding-left: 1rem;
 }
+
+@media (max-width: 1100px) {
+	.header-nav-toggle {
+		display: block;
+	}
+
+	.header-nav-toggle+.header-nav {
+		flex-direction: column;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		z-index: 9999;
+		background: #101119;
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: max-height .25s ease-in-out, opacity .15s;
+	}
+
+	.header-nav-toggle+.header-nav.is-active {
+		opacity: 1;
+	}
+
+	.header-nav-toggle+.header-nav ul {
+		display: block;
+		text-align: center;
+	}
+
+	.header-nav-toggle+.header-nav ul a:not(.button) {
+		display: inline-flex;
+		color: #DDE2F4;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.header-nav-toggle+.header-nav a.button {
+		margin-left: 0;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	.button-wide-mobile {
+		width: 100%;
+		max-width: 280px;
+	}
+
+	.header-nav-toggle+.header-nav .header-nav-inner {
+		flex-direction: column;
+		padding: 24px;
+	}
+}
