@@ -7,8 +7,9 @@ lite-youtube {
     contain: content;
     background-position: center center;
     background-size: cover;
+    margin-bottom: 3rem;
     cursor: pointer;
-    max-width: 720px;
+    max-width: 100%;
 }
 
 /* gradient */
@@ -84,6 +85,47 @@ lite-youtube.lyt-activated > .lty-playbtn {
     width: 1px;
   }
 
-  .carousel-item lite-youtube {
-    max-width: 100%;
+  .timeline-item-header {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+  }
+
+  .button span {
+    padding: 0.15rem 0.5rem 0 0;
+  }
+
+  /* back to top button and progress bar */
+  .back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: #4A61DD;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
+  
+  .back-to-top:hover {
+    opacity: 60%;
+  }
+  
+  .hidden {
+    opacity: 0%;
+  }
+  
+  .back-to-top-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+  }
+  
+  .progress-bar {
+    height: 1rem;
+    background: linear-gradient(to right top, #4A61DD 0, #2742CC 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
   }
