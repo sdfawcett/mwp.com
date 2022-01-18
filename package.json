@@ -2,7 +2,7 @@
     "name": "cube",
     "version": "1.0.0",
     "description": "cube Template",
-    "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
+    "author": "Shayne Fawcett <shayne@mindfulwebpartnership.com>",
     "license": "GPLv3",
     "scripts": {
         "clean": "rimraf public/{css/*,js/*,images/*}",
@@ -20,7 +20,7 @@
         "serve": "run-p sync serve:*",
         "build:html": "run-s minify-html",
         "build:css": "run-s lint-scss scss autoprefixer",
-        "build:js": "run-s lint uglify",
+        "build:js": "run-s uglify",
         "build": "run-s build:*"
     },
     "devDependencies": {
@@ -44,5 +44,5 @@
         "stylelint": "^9.4.0",
         "uglify-es": "^3.3.10"
     },
-    "homepage": "https://cruip.com/cube"
+    "homepage": "https://mindfulwebpartnership.com"
 }
